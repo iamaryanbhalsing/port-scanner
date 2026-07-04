@@ -41,7 +41,7 @@ Command Line Arguments
 
 ---
 
-Project Structure
+## Project Structure
 ```
 port-scanner/
 ├── port_scanner.py     # Main scanner program
@@ -51,3 +51,19 @@ port-scanner/
 
 ---
 
+## Example Output
+```
+Scanning 127.0.0.1 from port 1 to 100...
+
+✅ Open ports found:
+   Port 22    → ssh
+   Port 80    → http
+   Port 443   → https
+```
+
+---
+
+## Legal & Safety Notice
+⚠️ Important: Only use this tool on systems you own or have explicit permission to scan. Unauthorized port scanning may be illegal in your jurisdiction.
+
+---
