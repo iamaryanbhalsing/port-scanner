@@ -2,6 +2,7 @@
 
 A simple, fast, and user-friendly **TCP Port Scanner** written in Python.
 
+---
 ## Features
 
 - Scan any IP address or hostname
@@ -11,6 +12,7 @@ A simple, fast, and user-friendly **TCP Port Scanner** written in Python.
 - Supports both **interactive** and **command-line** usage
 - Clean, readable output
 
+---
 ## Installation
 
 No external dependencies required. Just Python 3.
@@ -20,3 +22,32 @@ No external dependencies required. Just Python 3.
 git clone https://github.com/iamaryanbhalsing/port-scanner
 cd port-scanner
 ```
+
+```
+Usage
+1. Interactive Mode
+Bashpython3 port_scanner.py
+2. Command Line Mode
+Bash# Scan localhost with default range (1-100)
+python3 port_scanner.py 127.0.0.1
+
+# Custom port range
+python3 port_scanner.py 192.168.1.1 -s 1 -e 500
+
+# Scan a specific range on a domain
+python3 port_scanner.py example.com --start 80 --end 443
+Command Line Arguments
+```
+
+---
+
+Project Structure
+```
+port-scanner/
+├── port_scanner.py     # Main scanner program
+├── README.md           # Documentation (this file)
+└── scans/              # (Optional) Folder to save scan results
+```
+
+---
+
